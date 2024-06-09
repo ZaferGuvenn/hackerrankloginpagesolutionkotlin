@@ -6,18 +6,22 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/secondary"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/image_card"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_gravity="center"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/roundedImageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"/>
+            android:src="@drawable/hfwlogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
 
     </androidx.cardview.widget.CardView>
 

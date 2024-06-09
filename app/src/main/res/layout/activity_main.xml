@@ -15,7 +15,12 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="100dp"
         android:layout_gravity="center"
-        tools:ignore="MissingConstraints">
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
 
         <ImageView
             android:id="@+id/roundedImageView"
@@ -29,7 +34,9 @@
         android:id="@+id/login_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/container"
+        />
 
     <TextView
         android:id="@+id/title"

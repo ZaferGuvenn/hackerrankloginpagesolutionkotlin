@@ -3,4 +3,6 @@
     <string name="button_text">Check</string>
     <string name="app_name">Login App</string>
     <string name="activity_main_xml_login_title_tv">Login</string>
+    <string name="activity_main_username_edittext_hinttext">Username</string>
+    <string name="activity_main_password_edittext_hinttext">Password</string>
 </resources>

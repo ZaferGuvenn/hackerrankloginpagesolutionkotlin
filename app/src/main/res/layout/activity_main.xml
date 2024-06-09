@@ -59,15 +59,24 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:ignore="MissingConstraints"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="50dp"
+        android:ems="15"
+        android:hint="@string/activity_main_username_edittext_hinttext"
+        />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        tools:ignore="MissingConstraints"/>
+        android:hint="@string/activity_main_password_edittext_hinttext"
+        />
 
     <Button
         android:id="@+id/login_btn"

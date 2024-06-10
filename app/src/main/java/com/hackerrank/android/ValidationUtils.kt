@@ -1,13 +1,15 @@
 package com.hackerrank.android
 
 object ValidationUtils {
-    fun isUsernameValid(text: String): Boolean? {
+    fun isUsernameValid(text: String): Boolean {
         //Replace the code in this method with the actual validation logic
-        return null
+
+        return text.isNotEmpty()
     }
 
-    fun isPasswordValid(text: String): Boolean? {
+    fun isPasswordValid(text: String): Boolean {
         //Replace the code in this method with the actual validation logic
-        return null
+
+        return text.length >= 4
     }
 }

@@ -29,6 +29,30 @@ class MainActivity : AppCompatActivity() {
 
     private fun executeSolution() {
         //Write your logic here
+
+        binding.loginBtn.setOnClickListener {
+
+            val usr=binding.username.text.toString()
+            val pass=binding.password.text.toString()
+
+            if (!isUsernameValid(usr)){
+                binding.username.error =
+                    getString(R.string.main_activity_username_edittext_isemty_error_message)
+                binding.password.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (!isPasswordValid(pass)){
+                binding.password.error =
+                    getString(R.string.main_activity_password_edittext_lessthan4digit_error_message)
+                binding.password.requestFocus()
+                return@setOnClickListener
+            }
+
+
+            Toast.makeText(this,
+                getString(R.string.main_activity_success_toastmessage),Toast.LENGTH_SHORT).show()
+        }
     }
 
 }

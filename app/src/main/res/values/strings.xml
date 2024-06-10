@@ -5,4 +5,9 @@
     <string name="activity_main_xml_login_title_tv">Login</string>
     <string name="activity_main_username_edittext_hinttext">Username</string>
     <string name="activity_main_password_edittext_hinttext">Password</string>
+
+    <string name="activity_main_login_button_text">Login</string>
+    <string name="main_activity_success_toastmessage">Success!</string>
+    <string name="main_activity_password_edittext_lessthan4digit_error_message">Password must have minimum 4 character!</string>
+    <string name="main_activity_username_edittext_isemty_error_message">Username is required!</string>
 </resources>
